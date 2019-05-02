@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Domain", "SportsStore.Domain\SportsStore.Domain.csproj", "{A933EED1-EBF9-4CCE-ABDF-8241C050631F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.UnitTests", "SportsStoreTests\SportsStore.UnitTests.csproj", "{BC96D522-FF14-4E8F-B281-3535ED7D74E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.WebUI", "SportsStore.WebUI\SportsStore.WebUI.csproj", "{BA8E9E69-2998-4D7E-A92E-F356200EDDDF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A933EED1-EBF9-4CCE-ABDF-8241C050631F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A933EED1-EBF9-4CCE-ABDF-8241C050631F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A933EED1-EBF9-4CCE-ABDF-8241C050631F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A933EED1-EBF9-4CCE-ABDF-8241C050631F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC96D522-FF14-4E8F-B281-3535ED7D74E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC96D522-FF14-4E8F-B281-3535ED7D74E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC96D522-FF14-4E8F-B281-3535ED7D74E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC96D522-FF14-4E8F-B281-3535ED7D74E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8E9E69-2998-4D7E-A92E-F356200EDDDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8E9E69-2998-4D7E-A92E-F356200EDDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8E9E69-2998-4D7E-A92E-F356200EDDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8E9E69-2998-4D7E-A92E-F356200EDDDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
