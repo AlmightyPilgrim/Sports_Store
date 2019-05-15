@@ -37,10 +37,5 @@ namespace SportsStore.WebUI.Controllers
             };
             return View(model);
         }
-
-        public ViewResult List()
-        {
-            return View(repository.Products);
-        }
     }
 }
