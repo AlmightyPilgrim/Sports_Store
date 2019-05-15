@@ -15,24 +15,31 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace SportsStore.WebUI.DependencyResolution {
+namespace SportsStore.WebUI.DependencyResolution
+{
     using StructureMap;
+    using SportsStore.Domain.Abstract;
+    using SportsStore.Domain.Concrete;
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
-	
-    public class DefaultRegistry : Registry {
+
+    public class DefaultRegistry : Registry
+    {
         #region Constructors and Destructors
 
-        public DefaultRegistry() {
+        public DefaultRegistry()
+        {
             Scan(
-                scan => {
+                scan =>
+                {
                     scan.TheCallingAssembly();
                     scan.WithDefaultConventions();
-					scan.With(new ControllerConvention());
+                    scan.With(new ControllerConvention());
                 });
+            For<IProductRepository>().Use<EFProductRepository>();
             //For<IExample>().Use<Example>();
         }
 
         #endregion
     }
-}
+}   

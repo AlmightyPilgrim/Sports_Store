@@ -24,9 +24,11 @@ namespace SportsStore.WebUI.DependencyResolution {
     using Microsoft.Practices.ServiceLocation;
     using SportsStore.Domain.Abstract;
     using SportsStore.Domain.Entities;
+    using SportsStore.Domain.Concrete;
     using StructureMap;
     using Moq;
 
+    
     /// <summary>
     /// The structure map dependency scope.
     /// </summary>
@@ -47,7 +49,8 @@ namespace SportsStore.WebUI.DependencyResolution {
 
             }
             Container = container;
-            AddBindings(container);
+            // AddBindings(container); 
+            // FAKE NEWS
         }
 
         #endregion
